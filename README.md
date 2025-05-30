@@ -36,9 +36,9 @@ A responsive, feature-rich team showcase plugin for WordPress with filtering, se
 
 Use the shortcode with optional parameters:
 
-\`\`\`
+```
 [team_showcase items_per_page="6" show_search="true" show_department_filter="true"]
-\`\`\`
+```
 
 ### Parameters
 
@@ -65,7 +65,7 @@ Use the shortcode with optional parameters:
 
 You can add custom CSS to your theme to override the default styles:
 
-\`\`\`css
+```css
 /* Example: Change card background color */
 .team-showcase-card {
     background-color: #f9f9f9;
@@ -76,19 +76,19 @@ You can add custom CSS to your theme to override the default styles:
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
-\`\`\`
+```
 
 ### Hooks and Filters
 
 The plugin provides several hooks and filters for developers to extend functionality:
 
-\`\`\`php
+```php
 // Example: Modify team member data before output
 add_filter('team_showcase_member_data', function($member_data, $post_id) {
     // Modify data here
     return $member_data;
 }, 10, 2);
-\`\`\`
+```
 
 ## Requirements
 
